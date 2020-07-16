@@ -22,7 +22,13 @@ Next what you'll want to do, if you want some kind of specific output, is to adj
 
 However, you should keep the domain as 'nosleep' if you want to see what the model does with the new data it was trained on. If you don't care too much about that, you can subsitute that value for any major news website url and it will try to produce a straight up news article. 
 
+### How to set up data for Training
+
+** To be added **
+
 ### How to Train
+
+** To be added **
 
 ### Code Acknowledgments
 
