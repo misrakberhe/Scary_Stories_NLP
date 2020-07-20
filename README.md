@@ -28,9 +28,19 @@ The model is adapted from the smallest version of the Grover one. Any modificati
 
 One of the main methods I experimented with was taking the feed forward neural network and adding it into various locations and with various amount of layers, mostly at the end of the Transformer code, which often ended up with gibberish. The current state of the model has been my best iteration.
 
+### Setting up data file
+
+** to be added **
+
 ### How to Train
 
-** To be added **
+Starting with the Train.py file, once you load the grover repo, you will need to set up the Google Colab TPU for training. I attempted to use finetune the Mega version of Grover, but the TPU services couldn't handle a model that size and I'm not planning on paying for AWS TPUS at this point. The code to setup the TPU is pulled directly from Google Cloud instructions, a few modifications and you have your TPU ready.
+
+Next what you want to do is adjust your learning rate, warmup steps and other parameters with the flags. You will need to copy the TF_MASTER into the TPU name (if your Google Colab session has been disconnected for a while, you will have to re-run that and make sure the TPU address is still the same).
+
+In that same step, you will want to make sure you're pointing at the right places. Input file is your '.tfrecord' file with the data and your output directory has to be pointing to a Google Cloud bucket, like mine is.
+
+At this point, you can train it. If you want to generate, you can just adjust the filepaths in the Generate.ipynb file. 
 
 ### Code Acknowledgments
 
