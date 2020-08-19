@@ -2,7 +2,7 @@
 
 The goal of this project is to generate scary stories using Transformer models. I want stories that can either stand on their own or be something a writer can bounce off of. I created this project as my capstone for my Data Science Diploma. 
 
-Here is a 3 minute presentation giving a general overview of what its about: https://www.loom.com/share/4baba399f75f48f780783aff4e1ed5df
+Here is a 3 minute presentation giving a high level overview of the concept: https://www.loom.com/share/4baba399f75f48f780783aff4e1ed5df
 
 ### Overview of the project
 
