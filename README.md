@@ -4,6 +4,17 @@ The goal of this project is to generate scary stories using Transformer models. 
 
 Here is a 3 minute presentation giving a general overview of what its about: https://www.loom.com/share/4baba399f75f48f780783aff4e1ed5df
 
+### Overview of the project
+
+The model was trained exclusively on news articles with the same architecture of GPT-2 and my goal was to use it to create scary stories. It was my first time working with transformers, so I tried a number of transfer learning methods, freezing the entire model and adding new linear layers, freezing some transformer layers and letting others be changed, and so on. 
+
+What I settled on was adding additional transformers into the model and keeping the rest of the model the same to train on my data. I judged this was the best method because the output was the most consistently intelligible from all the methods I tried.  
+
+One reason I felt most of the attempts were unintelligible were because the dataset is small ( approximately 4000+ stories) with highly variable writing patterns. 
+A second reason is that since the model is trained on a huge corpus of news articles, it would need a lot more examples of story structure to convert the news story structure. 
+A third reason is that my initial assumption on how transfer learning with transformers would have worked. I was imagining the content of my dataset would impose itself on the news story structure of the original model. I’m doubtful that transfer learning would create any kind of style transfer in this way without scary stories already written in a news style.  
+
+
 ### How to Generate Text
 
     Generate.ipynb
